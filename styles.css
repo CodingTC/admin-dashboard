@@ -54,5 +54,6 @@ ol[role="list"], ul[role="list"] {
 .container
 {
     display: grid;
-    grid-template: auto 5fr / 1fr 4fr;
+    grid-template: 1fr 5fr / 1fr 4fr;
 }
+
