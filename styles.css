@@ -63,9 +63,11 @@ ol[role="list"], ul[role="list"] {
     min-height: 100vh;
 }
 
-.header
-{
-    background-color: red;
+.header {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    padding: 1.5em;
 }
 
 .sidebar
@@ -134,4 +136,138 @@ ol[role="list"], ul[role="list"] {
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
+}
+
+.header-icon
+{
+    width: 2em;
+    height: 2em;
+}
+
+.pfp-settings
+{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.profile-pfp
+{
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 100%;
+}
+
+.temp-flex
+{
+    display: flex;
+}
+
+.header-grid-top
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 2em;
+}
+
+.header-grid-bottom
+{
+    display: grid;
+    grid-template-columns: 9fr 4fr;
+}
+
+.searchbar
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2em;
+    align-items: center;
+}
+
+.header-top-right
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.header-top-right h3
+{
+    font-size: 1.6rem;
+}
+
+.searchbar input[type="search"]
+{
+    width: 80%;
+    height: 50%;
+    background-color: #E2E8F0;
+    border-radius: 1.2em;
+    font-size: 1.6rem;
+    border: none;
+    padding: 1em;
+}
+
+.searchbar form input[type="search"]:focus
+{
+    outline: 2px solid blue;
+}
+
+
+.searchbar form
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom-left
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.header-bottom-left-text h2
+{
+    font-size: 3rem;
+}
+
+.header-bottom-left-text h4
+{
+    font-size: 1.6rem; 
+}
+
+.header-bottom-right
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 4em;
+    padding-right: 4em;
+}
+
+
+.header-bottom-right button
+{
+    font-size: 1.8rem;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #1992D4;
+    color: white;
+    border-radius: 2em;
+    border: 0px;
+}
+
+.header-top-right .header-icon
+{
+    justify-self: end;
+}
+
+.header-top-right h3
+{
+    justify-self: start;
 }
